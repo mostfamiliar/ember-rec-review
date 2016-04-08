@@ -1,4 +1,8 @@
-{{input type='checkbox' checked=reverseSort}} Sort by Rating (High-to-Low)
+Sort
+  {{radio-button value='date' groupValue=sortBy}}Date
+  {{radio-button value='user' groupValue=sortBy}}Username
+  {{radio-button value='rating' groupValue=sortBy}}Rating
+{{input type='checkbox' checked=reverseSort}} Reverse
 {{#each sortedReviews as |review|}}
 <div class="row">
   <div class="col-md-1">

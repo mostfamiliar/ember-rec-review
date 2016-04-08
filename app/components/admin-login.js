@@ -8,8 +8,7 @@ export default Ember.Component.extend({
   }),
   actions: {
     verify(){
-      console.log(this.get('adminLogin.logins.[]').includes('username'));
-      username: this.get('userInput');
+      username: this.get('username');
       //
       //       console.log(this.get('adminLogin.logins.[]'));
       //       this.notifyPropertyChange('username');

@@ -1,8 +1,15 @@
 <div class="jumbotron">
-<h2 id="title">{{#link-to 'index'}}PDX Rec Reviews{{/link-to}}</h2>
-{{#link-to 'admin'}}Admin{{/link-to}}
+  <div class="col-md-10">
+    <h1 id="title">{{#link-to 'index'}}Studio Beat{{/link-to}}</h1>
+  </div>
+  <div class="col-md-2">
+    <div class="header-block">
+      {{#link-to 'admin'}}Admin{{/link-to}}
+    </div>
+  </div>
 </div>
 
-<div class="container">
-{{outlet}}
-</div>
+
+  <div class="container">
+  {{outlet}}
+  </div>

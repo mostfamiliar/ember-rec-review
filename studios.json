@@ -1,0 +1,16 @@
+{ "studios": [{
+    "name": "Type Foundry",
+    "location": "N Portland",
+    "contact": "blah@gmail.com",
+    "details": "2300 sq ft",
+    "rates:" : "250 w/ house engineer",
+    "image": "http://www.typefoundrystudio.com/homepage.jpg"
+  }, {
+    "name": "Jackpot",
+    "location": "SE Portland",
+    "contact": "lcrane@gmail.com",
+    "details": "1500 sq ft, neve console",
+    "rates:" : "250 w/ house engineer",
+    "image": "http://www.wmanthony.com/tumblr/jackpot_04.jpg"
+  }]
+}

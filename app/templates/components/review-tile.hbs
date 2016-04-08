@@ -1,3 +1,21 @@
-{{#each model.reviews as |review|}}
-{{review.user}}
+{{#each reviews as |review|}}
+<div class="row">
+  <div class="col-md-1">
+    <h3>{{review.user}}</h3>
+    {{review.rating}}/10
+    Total reviews:
+  </div>
+  <div class="col-md-7">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p>{{review.body}}</p>
+        <p>{{review.band}}</p>
+        <p>{{review.date}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+
+  </div>
+</div>
 {{/each}}

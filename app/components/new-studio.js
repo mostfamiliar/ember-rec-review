@@ -9,8 +9,7 @@ export default Ember.Component.extend({
       contact: this.get('contact'),
       details: this.get('details'),
       rates: this.get('rates'),
-      image: this.get('image'),
-      reviews: []
+      image: this.get('image')
       };
       this.sendAction('saveStudio', params);
     }

@@ -8,7 +8,7 @@ export default Ember.Route.extend({
     saveReview(params) {
       var newReview = this.store.createRecord('review', params);
       var studio = params.studio;
-
+      console.log(params);
       studio.get('reviews').addObject(newReview);
       newReview.save().then(function(){
         return studio.save();

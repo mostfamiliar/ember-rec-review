@@ -1,4 +1,5 @@
-{{#each reviews as |review|}}
+{{input type='checkbox' checked=reverseSort}} Sort by Rating (High-to-Low)
+{{#each sortedReviews as |review|}}
 <div class="row">
   <div class="col-md-1">
     <h3>{{review.user}}</h3>

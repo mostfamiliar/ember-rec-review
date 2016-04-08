@@ -7,7 +7,8 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('studios');
-  this.route('single-studio');
+  this.route('studio', {path: '/studios/:studio_id'});
+  this.route('admin');
 });
 
 export default Router;

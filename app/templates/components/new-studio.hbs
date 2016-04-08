@@ -1,0 +1,41 @@
+{{#ember-remodal
+  openButton='New Studio'
+  confirmButton='save'
+  title='New Studio'
+  buttonClasses='btn'
+  openButtonClasses='btn-primary'
+  confirmButtonClasses='btn-success'
+  onClose=(action 'saveStudio')
+}}
+<form>
+  <div class="form-group">
+    <label for='name'>Studio name:</label>
+    {{input type="text" value=name}}
+  </div>
+
+  <div class="form-group">
+    <label for='name'>Location</label>
+    {{input type="text" value=location}}
+  </div>
+
+  <div class="form-group">
+    <label for='name'>Contact info</label>
+    {{input type="text" value=contact}}
+  </div>
+
+  <div class="form-group">
+    <label for='name'>Details:</label>
+    {{input type="text" value=details}}
+  </div>
+
+  <div class="form-group">
+    <label for='name'>Rates:</label>
+    {{input type="text" value=rates}}
+  </div>
+
+  <div class="form-group">
+    <label for='name'>Image:</label>
+    {{input type="text" value=image}}
+  </div>
+</form>
+{{/ember-remodal}}

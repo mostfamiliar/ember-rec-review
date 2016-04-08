@@ -6,4 +6,5 @@ export default DS.Model.extend({
   rating: DS.attr(),
   body: DS.attr(),
   band: DS.attr()
+  studio: DS.belongsTo('studio', {async: true})
 });

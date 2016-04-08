@@ -1,0 +1,29 @@
+{{#ember-remodal
+  openButton='Add a review'
+  buttonClasses='btn'
+  openButtonClasse='btn-info'
+  onClose=(action 'saveReview' item)
+}}
+
+<form>
+  <div class="form-group">
+    <label for="username">Username: </label>
+    {{input type="text" value=user}}
+  </div>
+
+  <div class="form-group">
+    <label for="username">Rating: </label>
+    {{input type="number" min=0 max=10 value=rating}}
+  </div>
+
+  <div class="form-group">
+    <label for="username">Review: </label>
+    {{input type="text" value=body}}
+  </div>
+
+  <div class="form-group">
+    <label for="username">Your band/project: </label>
+    {{input type="text" value=band}}
+  </div>
+</form>
+{{/ember-remodal}}

@@ -1,0 +1,14 @@
+{{#each studios as |studio|}}
+<div class="row">
+  <div class="col-md-6">
+    <div class="admin-studio-display">
+    <img class="admin-icon" src={{studio.image}} />
+    {{#link-to 'studio' studio.id}}{{studio.name}}{{/link-to}}
+    {{studio.location}}{{studio.contact}}
+    </div>
+  </div>
+  <div class="col-offset-4">
+  <button class="btn btn-info">Edit Studio</button>
+  </div>
+</div>
+{{/each}}

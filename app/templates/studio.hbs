@@ -2,10 +2,9 @@
 {{studio-tile studio=model}}
 </div>
 
-<div class="row">
-<h1>Reviews</h1>
-{{new-review studio=model saveReview="saveReview" }}
-</div>
 
 <h2>Reviews for {{model.name}}</h2>
-  {{review-tile reviews=model.reviews}}
+<hr>
+{{new-review studio=model saveReview="saveReview" }}
+<br>
+{{review-tile reviews=model.reviews}}

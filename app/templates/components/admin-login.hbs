@@ -1,5 +1,16 @@
+{{#if verifyLogin}}
+works
+
+{{else}}
+<h1>Studios</h1>
+
+{{new-studio studio=studio saveStudio="saveStudio"}}
+<hr>
 <form>
   <label for="username">Username</label>
   {{input value=username}}
   <button {{action 'verify'}}>Login</button>
 </form>
+{{/if}}
+
+{{verifyLogin}}

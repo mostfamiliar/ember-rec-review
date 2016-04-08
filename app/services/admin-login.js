@@ -5,5 +5,5 @@ export default Ember.Service.extend({
     includes(admin) {
       return this.get('logins').includes(admin);
     }
-  }
+  
 });

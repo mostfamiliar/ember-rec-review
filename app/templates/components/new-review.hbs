@@ -1,8 +1,11 @@
 {{#ember-remodal
   openButton='Add a review'
+  confirmButton='save'
+  title='New Studio'
   buttonClasses='btn'
-  openButtonClasse='btn-info'
-  onClose=(action 'saveReview' item)
+  openButtonClasses='btn-primary'
+  confirmButtonClasses='btn-success'
+  onClose=(action 'addReview')
 }}
 
 <form>

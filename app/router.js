@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('studios');
   this.route('studio', {path: '/studios/:studio_id'});
   this.route('admin');
+  this.route('review');
 });
 
 export default Router;

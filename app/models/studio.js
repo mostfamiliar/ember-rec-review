@@ -6,6 +6,6 @@ export default DS.Model.extend({
   contact: DS.attr(),
   details: DS.attr(),
   rates: DS.attr(),
-  image: DS.attr()
+  image: DS.attr(),
   reviews: DS.hasMany('review', {async: true})
 });

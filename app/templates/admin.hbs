@@ -1,3 +1,8 @@
-
 <h1>Studios</h1>
-{{new-studio}}
+
+{{new-studio studio=studio saveStudio="saveStudio"}}
+<hr>
+
+{{#each model.studios as |studio|}}
+{{#link-to 'studio' studio.id}}{{studio.name}}{{/link-to}}
+{{/each}}

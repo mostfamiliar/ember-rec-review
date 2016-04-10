@@ -8,7 +8,12 @@
     </div>
   </div>
   <div class="col-offset-4">
- {{edit-studio}}
+    <div class="col-md-1">
+     {{edit-studio studio=studio editStudio="editStudio"}}
+    </div>
+    <div class="col-md-1">
+     <button class="btn btn-danger">Delete Studio</button>
+   </div>
   </div>
 </div>
 {{/each}}

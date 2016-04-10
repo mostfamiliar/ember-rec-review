@@ -13,6 +13,15 @@ export default Ember.Route.extend({
         var newStudio = this.store.createRecord('studio', params);
         newStudio.save();
         this.transitionTo('admin');
-      }
-    }
+      },
+      editStudio(studio, params) {
+      Object.keys(params).forEach(function(key) {
+           if(params[key] !== undefined) {
+             studio.set(key, params[key]);
+        }
+      });
+       studio.save();
+       this.transitionTo('admin');
+     }
+   }
 });

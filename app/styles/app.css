@@ -2,6 +2,13 @@
   padding-left: 20px;
 }
 
+.new-studio-display {
+  padding-left: 20px;
+}
+
+.edit-studio-display {
+  display: inline block;
+}
 h2 index {
   color: white;
 }

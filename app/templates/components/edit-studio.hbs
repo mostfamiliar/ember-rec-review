@@ -1,1 +1,36 @@
-  <button class="btn btn-info">Edit Studio</button>
+{{#ember-remodal
+  openButton='Edit Studio'
+  confirmButton='save'
+  title='Edit Studio'
+  buttonClasses='btn'
+  openButtonClasses='btn-primary'
+  confirmButtonClasses='btn-success'
+  onClose=(action 'editStudio')
+}}
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      {{input value=name placeholder=studio.name}}
+    </div>
+
+    <div class="form-group">
+      <label for="contact">Contact:</label>
+      {{input value=contact placeholder=studio.contact}}
+    </div>
+
+    <div class="form-group">
+      <label for="details">Details:</label>
+      {{input value=details placeholder=studio.details}}
+    </div>
+
+    <div class="form-group">
+      <label for="rates">Rates:</label>
+      {{input value=rates placeholder=studio.rates}}
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image:</label>
+      {{input value=image placeholder=studio.image}}
+    </div>
+  </form>
+{{/ember-remodal}}

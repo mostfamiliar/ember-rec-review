@@ -2,6 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
+    editStudioForm() {
+      this.set('editStudioForm', true);
+    },
     editStudio(studio) {
       var params = {
       name: this.get('name'),

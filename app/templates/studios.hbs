@@ -1,3 +1,7 @@
+<h3>The List</h3>
 {{#each model.studios as |studio|}}
-{{#link-to 'studio' studio.id}}{{studio.name}}{{/link-to}}
+<div class="studio-list">
+  <img class="icon" src={{studio.image}} />
+  <h2>{{#link-to 'studio' studio.id}}{{studio.name}}{{/link-to}}</h2>
+</div>
 {{/each}}

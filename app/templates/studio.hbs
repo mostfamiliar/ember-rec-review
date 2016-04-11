@@ -1,10 +1,12 @@
-<div class='row'>
-{{studio-tile studio=model}}
+<div class="new-studio-display">
+  <div class='row'>
+    {{studio-tile studio=model}}
+  </div>
+
+
+  <h2>Reviews for {{model.name}}</h2>
+  <hr>
+  {{new-review studio=model saveReview="saveReview" }}
+  <br>
+  {{review-tile reviews=model.reviews}}
 </div>
-
-
-<h2>Reviews for {{model.name}}</h2>
-<hr>
-{{new-review studio=model saveReview="saveReview" }}
-<br>
-{{review-tile reviews=model.reviews}}

@@ -1,7 +1,14 @@
-<h3>The List</h3>
-{{#each model.studios as |studio|}}
-<div class="studio-list">
-  <img class="icon" src={{studio.image}} />
-  <h2>{{#link-to 'studio' studio.id}}{{studio.name}}{{/link-to}}</h2>
+<div class="new-studio-display">
+  <h2>Full List</h2>
+
+  {{#each model.studios as |studio|}}
+  <div class="col-md-4">
+    <div class="studio-list">
+      <img class="studio-list-view" src={{studio.image}} />
+      <h3>{{#link-to 'studio' studio.id}}{{studio.name}}{{/link-to}}</h3>
+      <p>Review count: </p>
+      <h4>Add to favorites</h4>
+    </div>
+  </div>
+  {{/each}}
 </div>
-{{/each}}

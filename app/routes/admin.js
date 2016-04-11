@@ -22,6 +22,10 @@ export default Ember.Route.extend({
       });
        studio.save();
        this.transitionTo('admin');
+     },
+     deleteStudio(studio) {
+       studio.destroyRecord();
+       this.transitionTo('admin');
      }
    }
 });

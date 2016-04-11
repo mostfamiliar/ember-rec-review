@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('studio', {path: '/studios/:studio_id'});
   this.route('admin');
   this.route('review');
+  this.route('favorites');
 });
 
 export default Router;

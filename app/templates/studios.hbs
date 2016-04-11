@@ -7,7 +7,7 @@
       <img class="studio-list-view" src={{studio.image}} />
       <h3>{{#link-to 'studio' studio.id}}{{studio.name}}{{/link-to}}</h3>
       <p>Review count: </p>
-      <h4>Add to favorites</h4>
+      <span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true" {{action 'addToFavorites' studio on="click"}}></span>
     </div>
   </div>
   {{/each}}

@@ -7,6 +7,7 @@
     "ember-qunit-notifications": "0.1.0",
     "bootstrap": "~3.3.5",
     "firebase": "^2.1.0",
-    "remodal": "1.0.7"
+    "remodal": "1.0.7",
+    "moment": "momentjs#^2.12.0"
   }
 }

@@ -26,6 +26,10 @@ export default Ember.Route.extend({
      deleteStudio(studio) {
        studio.destroyRecord();
        this.transitionTo('admin');
+     },
+     deleteReview(review){
+       review.destroyRecord();
+       this.transitionTo('admin');
      }
    }
 });

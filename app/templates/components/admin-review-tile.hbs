@@ -1,0 +1,14 @@
+<div class="new-studio-display">
+  <h2>Comments</h2>
+  {{#each reviews as |review|}}
+  <div class="row">
+    <div class="col-md-6">
+        <h4>{{review.user}}</h4>
+        <p>{{review.body}}</p>
+    </div>
+    <div class="col-md-1">
+      <button class="btn btn-danger" {{action 'deleteReview' review}}>Delete Review</button>
+    </div>
+  </div>
+  {{/each}}
+</div>
